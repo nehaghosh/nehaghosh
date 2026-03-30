@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Contact Neha Ghosh — open to internships, freelance projects, and good conversations. Replies within 24 hours."/>
+<title>Contact | Neha Ghosh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@400;500;600&family=Manrope:wght@700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#a3a6ff","on-primary": "#0f00a4","primary-container": "#9396ff",
+          "on-primary-container": "#0a0081","primary-fixed": "#9396ff","primary-fixed-dim": "#8387ff",
+          "on-primary-fixed": "#000000","on-primary-fixed-variant": "#0e009d","primary-dim": "#6063ee",
+          "secondary": "#ff67ad","on-secondary": "#460027","secondary-container": "#aa0266",
+          "on-secondary-container": "#ffe5ec","secondary-fixed": "#ffc1d6","secondary-fixed-dim": "#ffaccb",
+          "on-secondary-fixed": "#6b003e","on-secondary-fixed-variant": "#9e005e","secondary-dim": "#ff67ad",
+          "tertiary": "#8ce7ff","on-tertiary": "#005464","tertiary-container": "#53ddfc",
+          "on-tertiary-container": "#004b58","tertiary-fixed": "#53ddfc","tertiary-fixed-dim": "#40ceed",
+          "on-tertiary-fixed": "#003640","on-tertiary-fixed-variant": "#005564","tertiary-dim": "#40ceed",
+          "surface": "#060e20","surface-dim": "#060e20","surface-bright": "#1f2b49",
+          "surface-container-lowest": "#000000","surface-container-low": "#091328",
+          "surface-container": "#0f1930","surface-container-high": "#141f38",
+          "surface-container-highest": "#192540","on-surface": "#dee5ff","on-surface-variant": "#a3aac4",
+          "outline": "#6d758c","outline-variant": "#40485d","background": "#060e20","on-background": "#dee5ff",
+          "inverse-surface": "#faf8ff","inverse-on-surface": "#4d556b","inverse-primary": "#494bd7",
+          "surface-variant": "#192540","surface-tint": "#a3a6ff",
+          "error": "#ff6e84","on-error": "#490013","error-container": "#a70138","on-error-container": "#ffb2b9",
+        },
+        fontFamily: { "headline": ["Noto Serif"], "body": ["Inter"], "label": ["Manrope"] },
+        borderRadius: {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
+  .glass-card { background:rgba(15,23,42,0.4); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.05); }
+  .dot-grid { background-image:radial-gradient(rgba(163,166,255,0.07) 1px,transparent 1px); background-size:24px 24px; }
+  .glow-overlay { background:radial-gradient(circle at 50% 0%,rgba(163,166,255,0.08) 0%,transparent 65%); }
+  .input-line { background:transparent; border:none; border-bottom:1px solid rgba(255,255,255,0.1); width:100%; padding:16px 0; color:#dee5ff; font-size:1rem; outline:none; transition:border-color 0.3s; font-family:'Inter',sans-serif; }
+  .input-line:focus { border-bottom-color:#a3a6ff; }
+  .input-line::placeholder { color:rgba(163,170,196,0.4); font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; font-family:'Manrope',sans-serif; }
+  .float-label { position:absolute; left:0; top:-18px; font-size:10px; font-family:'Manrope',sans-serif; letter-spacing:0.4em; text-transform:uppercase; color:#6d758c; pointer-events:none; }
+  .contact-card { transition: all 0.3s ease; }
+  .contact-card:hover .card-icon { transform:scale(1.15); }
+  .card-icon { transition:transform 0.3s ease; }
+  .availability-dot { width:8px; height:8px; background:#4ade80; border-radius:50%; animation:pulse-green 2s infinite; display:inline-block; }
+  @keyframes pulse-green { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.3)} }
+  .tag-pill { display:inline-flex; align-items:center; gap:6px; padding:6px 14px; border-radius:999px; font-size:11px; font-family:'Manrope',sans-serif; letter-spacing:0.08em; text-transform:uppercase; border:1px solid rgba(163,166,255,0.15); background:rgba(163,166,255,0.05); color:#a3a6ff; }
+  .divider-line { width:40px; height:1px; background:linear-gradient(to right,rgba(163,166,255,0.5),transparent); display:inline-block; vertical-align:middle; margin-right:12px; }
+  option { background:#0f1930; color:#dee5ff; }
+</style>
+<meta property="og:title" content="Contact | Neha Ghosh"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://i.ibb.co/DHQyFfZb/photo.jpg"/>
+<meta property="og:url" content="https://nehaghosh.dev/contact.html"/>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+
+<!-- NAV -->
+<nav id="main-nav" class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-2xl border border-slate-800/50 bg-surface/60 backdrop-blur-xl shadow-[0_20px_40px_rgba(163,166,255,0.06)] flex justify-between items-center px-8 py-4 z-50">
+  <div class="text-2xl font-bold tracking-tighter text-slate-100 font-headline"><a href="index.html" style="text-decoration:none;color:inherit">Neha Ghosh</a></div>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="about.html">About</a>
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="projects.html">Projects</a>
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="achievements.html">Achievements</a>
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="certifications.html">Certifications</a>
+    <a class="text-indigo-400 border-b-2 border-indigo-500/50 pb-1 font-medium transition-colors duration-300" href="contact.html">Contact</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <button onclick="location.href='contact.html'" class="hidden md:inline-flex bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-6 py-2.5 rounded-xl font-label text-xs uppercase tracking-widest scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/10">Let's Talk</button>
+    <!-- Hamburger (mobile only) -->
+    <button id="nav-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-xl bg-surface-container-highest border border-outline-variant/20 gap-1.5 hover:border-primary/30 transition-colors" aria-label="Toggle menu" onclick="toggleMobileNav()">
+      <span class="nav-bar w-5 h-0.5 bg-on-surface-variant rounded-full transition-all duration-300"></span>
+      <span class="nav-bar w-5 h-0.5 bg-on-surface-variant rounded-full transition-all duration-300"></span>
+      <span class="nav-bar w-5 h-0.5 bg-on-surface-variant rounded-full transition-all duration-300"></span>
+    </button>
+  </div>
+</nav>
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed top-0 left-0 w-full h-full z-40 pointer-events-none">
+  <div id="mobile-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 transition-opacity duration-300" onclick="toggleMobileNav()"></div>
+  <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface-container-low border-l border-outline-variant/20 shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col">
+    <div class="flex items-center justify-between px-6 py-6 border-b border-outline-variant/10">
+      <span class="font-headline text-lg italic text-on-surface">Neha Ghosh</span>
+      <button onclick="toggleMobileNav()" class="w-9 h-9 flex items-center justify-center rounded-xl bg-surface-container-highest border border-outline-variant/20 hover:border-primary/30 transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant text-xl">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1 px-4 py-6 flex-grow">
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="about.html">About</a>
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="projects.html">Projects</a>
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="achievements.html">Achievements</a>
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="certifications.html">Certifications</a>
+        <a class="block px-4 py-3 rounded-xl text-indigo-400 bg-primary/10 font-medium font-label text-sm tracking-wide" href="contact.html">Contact</a>
+    </nav>
+    <div class="px-4 pb-8 border-t border-outline-variant/10 pt-6">
+      <a href="contact.html" class="block w-full text-center bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-6 py-3 rounded-xl font-label text-xs uppercase tracking-widest shadow-lg shadow-primary/10 hover:shadow-[0_0_24px_rgba(163,166,255,0.4)] transition-all">Let's Talk</a>
+      <div class="mt-5 flex flex-col gap-2">
+        <a href="tel:+916286710980" class="flex items-center gap-2 text-on-surface-variant text-xs font-body"><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1;">phone</span>+91 6286710980</a>
+        <a href="mailto:nehaghmail@gmail.com" class="flex items-center gap-2 text-on-surface-variant text-xs font-body"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings:'FILL' 1;">mail</span>nehaghmail@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function toggleMobileNav(){
+  var menu  = document.getElementById('mobile-menu');
+  var drawer= document.getElementById('mobile-drawer');
+  var overlay=document.getElementById('mobile-overlay');
+  var bars  = document.querySelectorAll('.nav-bar');
+  var open  = drawer.classList.contains('translate-x-0');
+  if(open){
+    drawer.classList.replace('translate-x-0','translate-x-full');
+    overlay.classList.replace('opacity-100','opacity-0');
+    menu.classList.add('pointer-events-none');
+    bars[0].style.transform=''; bars[2].style.transform=''; bars[1].style.opacity='1';
+    document.body.style.overflow='';
+  } else {
+    drawer.classList.replace('translate-x-full','translate-x-0');
+    overlay.classList.replace('opacity-0','opacity-100');
+    menu.classList.remove('pointer-events-none');
+    bars[0].style.transform='translateY(8px) rotate(45deg)';
+    bars[2].style.transform='translateY(-8px) rotate(-45deg)';
+    bars[1].style.opacity='0';
+    document.body.style.overflow='hidden';
+  }
+}
+</script>
+
+<main class="flex-1 pt-32 pb-0">
+
+  <!-- HERO SECTION -->
+  <div class="max-w-7xl mx-auto px-8 pt-16 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid pointer-events-none opacity-50"></div>
+    <div class="absolute inset-0 glow-overlay pointer-events-none"></div>
+    <div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: Identity + Status -->
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="availability-dot"></span>
+          <span class="font-label text-[10px] text-green-400 tracking-[0.4em] uppercase">Open to Opportunities</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-7xl font-bold leading-[1.1] mb-6 text-on-surface">
+          Let's talk.<br/>
+          <span class="text-primary italic">I don't bite.</span>
+        </h1>
+        <p class="font-body text-on-surface-variant text-lg leading-relaxed mb-8 max-w-lg">
+          Whether you have a project, an internship, or just want to say hi — drop me a message. I read everything and reply within 24 hours.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-10">
+          <span class="tag-pill"><span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1;">laptop_mac</span>Full-Stack Dev</span>
+          <span class="tag-pill"><span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1;">smart_toy</span>AI &amp; APIs</span>
+          <span class="tag-pill"><span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1;">shopping_bag</span>E-Commerce</span>
+          <span class="tag-pill"><span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1;">workspace_premium</span>Google Big Code 2026</span>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="mailto:nehaghmail@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-on-primary-fixed font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-colors shadow-lg shadow-primary/20">
+            <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">mail</span>
+            Email Me
+          </a>
+          <a href="https://linkedin.com/in/nehaghosh00" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/40 text-on-surface-variant hover:text-primary hover:border-primary/40 font-label text-xs uppercase tracking-widest transition-all">
+            <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">work</span>
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Summary Card -->
+      <div class="glass-card rounded-3xl p-8 border border-outline-variant/10 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-48 h-48 bg-primary/5 blur-[60px] rounded-full pointer-events-none"></div>
+        <div class="relative z-10">
+          <p class="font-label text-[10px] uppercase tracking-[0.4em] text-on-surface-variant mb-6">Quick Info</p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-surface/50 border border-outline-variant/10">
+              <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">school</span>
+              </div>
+              <div>
+                <p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Education</p>
+                <p class="font-body text-sm font-semibold text-on-surface">B.Tech — Computer Science &amp; Engineering</p>
+                <p class="font-body text-xs text-on-surface-variant">Lovely Professional University, Punjab · 2023–2027</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-surface/50 border border-outline-variant/10">
+              <div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+              </div>
+              <div>
+                <p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Latest Achievement</p>
+                <p class="font-body text-sm font-semibold text-on-surface">Google Big Code 2026 — Round 1 &amp; 2 Qualifier</p>
+                <p class="font-body text-xs text-on-surface-variant">Top 15 Teams · Coding Blocks Hackathon 2024</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-surface/50 border border-outline-variant/10">
+              <div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary flex-shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">shopping_bag</span>
+              </div>
+              <div>
+                <p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Live Freelance Work</p>
+                <p class="font-body text-sm font-semibold text-on-surface">achord.in — Shopify Store · ₹11,000+ Revenue</p>
+                <p class="font-body text-xs text-on-surface-variant">E-commerce, digital products, Razorpay integration</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-surface/50 border border-outline-variant/10">
+              <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+                <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">location_on</span>
+              </div>
+              <div>
+                <p class="font-label text-[10px] uppercase tracking-widest text-outline mb-1">Location &amp; Availability</p>
+                <p class="font-body text-sm font-semibold text-on-surface">Jalandhar / Kolkata, India</p>
+                <p class="font-body text-xs text-on-surface-variant">Happy to relocate or work remotely. I reply within a day, usually faster.</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1keG4-3k9dl-MczoUR1aW81M-OtcpQK6Y/view?usp=sharing" target="_blank" rel="noopener" class="mt-6 w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary/10 border border-primary/20 text-primary font-label text-xs uppercase tracking-widest hover:bg-primary/20 transition-colors">
+            <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">download</span>
+            Download My CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT CHANNELS -->
+  <div class="max-w-7xl mx-auto px-8 mb-20">
+    <div class="mb-10">
+      <span class="divider-line"></span>
+      <span class="font-label text-[10px] uppercase tracking-[0.4em] text-on-surface-variant">Reach Me On</span>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <a href="mailto:nehaghmail@gmail.com" class="contact-card glass-card rounded-2xl p-6 flex flex-col gap-4 hover:border-primary/30 hover:shadow-[0_0_28px_rgba(163,166,255,0.12)] group">
+        <div class="flex items-center justify-between">
+          <div class="card-icon w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings:'FILL' 1;">mail</span>
+          </div>
+          <span class="material-symbols-outlined text-outline text-base group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">arrow_outward</span>
+        </div>
+        <div>
+          <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Email</p>
+          <p class="font-body text-sm text-on-surface group-hover:text-primary transition-colors break-all leading-relaxed">nehaghmail@gmail.com</p>
+          <p class="font-body text-xs text-outline mt-1">Best for detailed inquiries</p>
+        </div>
+      </a>
+
+      <a href="tel:+916286710980" class="contact-card glass-card rounded-2xl p-6 flex flex-col gap-4 hover:border-secondary/30 hover:shadow-[0_0_28px_rgba(255,103,173,0.10)] group">
+        <div class="flex items-center justify-between">
+          <div class="card-icon w-11 h-11 rounded-xl bg-secondary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings:'FILL' 1;">phone</span>
+          </div>
+          <span class="material-symbols-outlined text-outline text-base group-hover:text-secondary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">arrow_outward</span>
+        </div>
+        <div>
+          <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Phone</p>
+          <p class="font-body text-sm text-on-surface group-hover:text-secondary transition-colors">+91 6286710980</p>
+          <p class="font-body text-xs text-outline mt-1">Available IST business hours</p>
+        </div>
+      </a>
+
+      <a href="https://linkedin.com/in/nehaghosh00" target="_blank" rel="noopener" class="contact-card glass-card rounded-2xl p-6 flex flex-col gap-4 hover:border-tertiary/30 hover:shadow-[0_0_28px_rgba(140,231,255,0.10)] group">
+        <div class="flex items-center justify-between">
+          <div class="card-icon w-11 h-11 rounded-xl bg-tertiary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary text-xl" style="font-variation-settings:'FILL' 1;">work</span>
+          </div>
+          <span class="material-symbols-outlined text-outline text-base group-hover:text-tertiary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">arrow_outward</span>
+        </div>
+        <div>
+          <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">LinkedIn</p>
+          <p class="font-body text-sm text-on-surface group-hover:text-tertiary transition-colors">nehaghosh00</p>
+          <p class="font-body text-xs text-outline mt-1">Professional profile &amp; network</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/nehaghosh" target="_blank" rel="noopener" class="contact-card glass-card rounded-2xl p-6 flex flex-col gap-4 hover:border-primary/30 hover:shadow-[0_0_28px_rgba(163,166,255,0.12)] group">
+        <div class="flex items-center justify-between">
+          <div class="card-icon w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings:'FILL' 1;">code</span>
+          </div>
+          <span class="material-symbols-outlined text-outline text-base group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">arrow_outward</span>
+        </div>
+        <div>
+          <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">GitHub</p>
+          <p class="font-body text-sm text-on-surface group-hover:text-primary transition-colors">github.com/nehaghosh</p>
+          <p class="font-body text-xs text-outline mt-1">Code, projects &amp; contributions</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- WHAT I'M OPEN TO + FORM -->
+  <div class="max-w-7xl mx-auto px-8 mb-28 grid lg:grid-cols-5 gap-10 items-start">
+
+    <!-- Left: What I'm open to -->
+    <div class="lg:col-span-2 space-y-4">
+      <div class="mb-8">
+        <span class="divider-line"></span>
+        <span class="font-label text-[10px] uppercase tracking-[0.4em] text-on-surface-variant">What I'm Open To</span>
+      </div>
+      <div class="glass-card rounded-2xl p-6 border border-outline-variant/10 flex items-start gap-4 hover:border-primary/20 transition-colors">
+        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+          <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">business_center</span>
+        </div>
+        <div>
+          <p class="font-label text-xs font-bold text-on-surface mb-1">Internships &amp; Jobs</p>
+          <p class="font-body text-xs text-on-surface-variant leading-relaxed">I'm actively looking for internships and entry-level roles. Web dev, full-stack, anything interesting.</p>
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl p-6 border border-outline-variant/10 flex items-start gap-4 hover:border-secondary/20 transition-colors">
+        <div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0">
+          <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">handshake</span>
+        </div>
+        <div>
+          <p class="font-label text-xs font-bold text-on-surface mb-1">Freelance Projects</p>
+          <p class="font-body text-xs text-on-surface-variant leading-relaxed">Need a website, a store, or something custom? I've done it before and I'm open to new work.</p>
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl p-6 border border-outline-variant/10 flex items-start gap-4 hover:border-tertiary/20 transition-colors">
+        <div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary flex-shrink-0">
+          <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">groups</span>
+        </div>
+        <div>
+          <p class="font-label text-xs font-bold text-on-surface mb-1">Collaborations</p>
+          <p class="font-body text-xs text-on-surface-variant leading-relaxed">Hackathons, open-source, student projects — always down to build something with good people.</p>
+        </div>
+      </div>
+      <div class="glass-card rounded-2xl p-6 border border-outline-variant/10 flex items-start gap-4 hover:border-primary/20 transition-colors">
+        <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+          <span class="material-symbols-outlined text-lg" style="font-variation-settings:'FILL' 1;">chat_bubble</span>
+        </div>
+        <div>
+          <p class="font-label text-xs font-bold text-on-surface mb-1">Just a Conversation</p>
+          <p class="font-body text-xs text-on-surface-variant leading-relaxed">No agenda needed. If you want to chat about tech, careers, or college life — I'm here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Message Form -->
+    <div class="lg:col-span-3">
+      <div class="mb-8">
+        <span class="divider-line"></span>
+        <span class="font-label text-[10px] uppercase tracking-[0.4em] text-on-surface-variant">Send a Message</span>
+      </div>
+      <div class="glass-card rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+        <form class="space-y-12 relative z-10" onsubmit="handleSubmit(event)">
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="relative">
+              <label class="float-label" for="name">Your Name</label>
+              <input class="input-line" id="name" placeholder="Your Name" type="text" required/>
+            </div>
+            <div class="relative">
+              <label class="float-label" for="email">Email Address</label>
+              <input class="input-line" id="email" placeholder="Email Address" type="email" required/>
+            </div>
+          </div>
+          <div class="relative">
+            <label class="float-label" for="org">Company / Organization <span style="opacity:0.4">(optional)</span></label>
+            <input class="input-line" id="org" placeholder="Company / Organization (optional)" type="text"/>
+          </div>
+          <div class="relative">
+            <label class="float-label" for="subject">Purpose of Inquiry</label>
+            <select class="input-line" id="subject" style="cursor:pointer;">
+              <option value="" disabled selected hidden>Select one...</option>
+              <option value="internship">Internship / Job Opportunity</option>
+              <option value="freelance">Freelance / Client Project</option>
+              <option value="collaboration">Collaboration / Hackathon</option>
+              <option value="mentorship">Mentorship / Networking</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="relative">
+            <label class="float-label" for="message">Your Message</label>
+            <textarea class="input-line min-h-[120px] resize-none" id="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button class="w-full group relative py-5 rounded-2xl bg-white text-slate-950 font-label uppercase tracking-[0.3em] text-xs font-bold overflow-hidden transition-all duration-300 hover:bg-primary hover:text-surface" type="submit">
+            <span class="relative z-10 flex items-center justify-center gap-2" id="btn-text">
+              <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">send</span>
+              Send Message
+            </span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Quote Strip -->
+<section class="w-full bg-surface-container-low border-t border-outline-variant/10 py-8 px-8 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+    <span class="material-symbols-outlined text-primary text-xl flex-shrink-0" style="font-variation-settings:'FILL' 1;">format_quote</span>
+    <div id="quote-display" class="transition-opacity duration-700 opacity-100">
+      <p class="font-headline italic text-base text-on-surface-variant leading-relaxed max-w-2xl" id="quote-text">
+        "The people who are crazy enough to think they can change the world are the ones who do."
+      </p>
+      <span class="font-label text-[10px] uppercase tracking-[0.25em] text-primary mt-2 block" id="quote-author">— Steve Jobs</span>
+    </div>
+    <span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 rotate-180 hidden sm:block" style="font-variation-settings:'FILL' 1;">format_quote</span>
+  </div>
+</section>
+<script>
+(function(){
+  var quotes=[
+    {text:"The people who are crazy enough to think they can change the world are the ones who do.",author:"Steve Jobs"},
+    {text:"Any sufficiently advanced technology is indistinguishable from magic.",author:"Arthur C. Clarke"},
+    {text:"The best way to predict the future is to invent it.",author:"Alan Kay"},
+    {text:"First, solve the problem. Then, write the code.",author:"John Johnson"},
+    {text:"Technology is best when it brings people together.",author:"Matt Mullenweg"},
+    {text:"Software is a great combination between artistry and engineering.",author:"Bill Gates"},
+    {text:"Code is like humor. When you have to explain it, it's bad.",author:"Cory House"},
+    {text:"The function of good software is to make the complex appear simple.",author:"Grady Booch"}
+  ];
+  var i=0;
+  function cycle(){
+    var d=document.getElementById('quote-display');
+    if(!d)return;
+    d.style.opacity='0';
+    setTimeout(function(){
+      i=(i+1)%quotes.length;
+      document.getElementById('quote-text').textContent='"'+quotes[i].text+'"';
+      document.getElementById('quote-author').textContent='— '+quotes[i].author;
+      d.style.opacity='1';
+    },700);
+  }
+  setInterval(cycle,5000);
+})();
+</script>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/10 bg-surface-container-low pt-14 pb-10 px-8">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Top: Identity + Nav links -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+
+      <!-- Column 1: Identity -->
+      <div class="space-y-3">
+        <p class="font-headline text-2xl italic text-on-surface">Neha Ghosh</p>
+        <p class="font-label text-xs uppercase tracking-[0.2em] text-primary">Full-Stack Web Developer | Freelancer</p>
+        <p class="font-body text-sm text-on-surface-variant leading-relaxed max-w-xs mt-4">
+          Undergraduate student in Computer Science &amp; Engineering. Building stuff, learning everything, one project at a time.
+        </p>
+      </div>
+
+      <!-- Column 2: Contact Info -->
+      <div class="space-y-4">
+        <p class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-5">Contact</p>
+        <a href="tel:+916286710980" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">phone</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-primary transition-colors">+91 6286710980</span>
+        </a>
+        <a href="mailto:nehaghmail@gmail.com" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">mail</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-secondary transition-colors">nehaghmail@gmail.com</span>
+        </a>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-tertiary text-base" style="font-variation-settings:'FILL' 1;">location_on</span>
+          <span class="font-body text-sm text-on-surface-variant">Kolkata, India</span>
+        </div>
+      </div>
+
+      <!-- Column 3: Links -->
+      <div class="space-y-4">
+        <p class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-5">Connect</p>
+        <a href="https://linkedin.com/in/nehaghosh00" target="_blank" rel="noopener" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">work</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-primary transition-colors">linkedin.com/in/nehaghosh00</span>
+        </a>
+        <a href="https://github.com/nehaghosh" target="_blank" rel="noopener" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">code</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-secondary transition-colors">github.com/nehaghosh</span>
+        </a>
+        <a href="about.html" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-tertiary text-base" style="font-variation-settings:'FILL' 1;">person</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-tertiary transition-colors">View Full Profile</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-outline-variant/15 mb-8"></div>
+
+    <!-- Bottom: Nav + tagline -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex flex-wrap gap-6 justify-center md:justify-start">
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="projects.html">Projects</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="achievements.html">Achievements</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="certifications.html">Certifications</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+      </div>
+      <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant/50">Designed &amp; Built by Neha Ghosh</p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+function setBtn(html){ document.getElementById('btn-text').innerHTML = html; }
+var ICON_SEND    = '<span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">send</span>';
+var ICON_LOADING = '<span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">progress_activity</span>';
+var ICON_OK      = '<span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">check_circle</span>';
+var ICON_ERR     = '<span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1;">error</span>';
+
+function openMailto() {
+  var name    = document.getElementById('name').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var org     = document.getElementById('org').value.trim();
+  var subject = document.getElementById('subject').value || 'Portfolio Inquiry';
+  var message = document.getElementById('message').value.trim();
+  var body    = 'Name: ' + name + '\nEmail: ' + email + (org ? '\nOrg: ' + org : '') + '\n\n' + message;
+  window.location.href = 'mailto:nehaghmail@gmail.com'
+    + '?subject=' + encodeURIComponent('[Portfolio] ' + subject + ' — from ' + name)
+    + '&body='    + encodeURIComponent(body);
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+  var form = e.target;
+  var btn  = document.querySelector('button[type="submit"]');
+
+  var name    = document.getElementById('name').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var org     = document.getElementById('org').value.trim();
+  var subject = document.getElementById('subject').value || 'General';
+  var message = document.getElementById('message').value.trim();
+
+  setBtn(ICON_LOADING + ' Sending…');
+  btn.disabled = true;
+
+  // Formspree — works without PHP/server. Replace YOUR_FORM_ID with your Formspree form ID.
+  // Get a free form ID at https://formspree.io (sign up with nehaghmail@gmail.com)
+  var FORMSPREE_ID = 'YOUR_FORM_ID'; // ← Replace this with your Formspree form ID e.g. 'xpwzgkqr'
+
+  if (FORMSPREE_ID === 'YOUR_FORM_ID') {
+    // Fallback to mailto until Formspree is set up
+    openMailto();
+    setBtn(ICON_OK + ' Opening your email app…');
+    setTimeout(function(){ setBtn(ICON_SEND + ' Send Message'); btn.disabled = false; }, 3000);
+    return;
+  }
+
+  fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ name: name, email: email, org: org, subject: subject, message: message })
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(data) {
+    if (data.ok) {
+      setBtn(ICON_OK + ' Message sent! I'll reply soon.');
+      form.reset();
+      setTimeout(function(){ setBtn(ICON_SEND + ' Send Message'); btn.disabled = false; }, 5000);
+    } else { throw new Error('Formspree error'); }
+  })
+  .catch(function() {
+    openMailto();
+    setBtn(ICON_OK + ' Opening email app…');
+    setTimeout(function(){ setBtn(ICON_SEND + ' Send Message'); btn.disabled = false; }, 3000);
+  });
+}
+</script>
+</body></html>

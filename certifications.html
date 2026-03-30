@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Certifications by Neha Ghosh — Generative AI, TCP/IP networking, C++ DSA, responsive web design and more."/>
+<title>Certifications | Neha Ghosh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600&amp;family=Manrope:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed-variant": "#005564",
+            "primary": "#a3a6ff",
+            "on-primary-fixed-variant": "#0e009d",
+            "tertiary": "#8ce7ff",
+            "surface-container": "#0f1930",
+            "outline": "#6d758c",
+            "on-background": "#dee5ff",
+            "inverse-surface": "#faf8ff",
+            "primary-fixed-dim": "#8387ff",
+            "on-tertiary-fixed": "#003640",
+            "error-dim": "#d73357",
+            "on-tertiary-container": "#004b58",
+            "surface-container-lowest": "#000000",
+            "tertiary-fixed-dim": "#40ceed",
+            "surface": "#060e20",
+            "background": "#020617",
+            "on-error": "#490013",
+            "secondary-fixed": "#ffc1d6",
+            "secondary-container": "#aa0266",
+            "error": "#ff6e84",
+            "surface-container-highest": "#192540",
+            "on-surface-variant": "#a3aac4",
+            "on-secondary": "#460027",
+            "on-secondary-fixed-variant": "#9e005e",
+            "secondary-dim": "#ff67ad",
+            "tertiary-dim": "#40ceed",
+            "surface-variant": "#192540",
+            "error-container": "#a70138",
+            "primary-container": "#9396ff",
+            "surface-bright": "#1f2b49",
+            "primary-fixed": "#9396ff",
+            "on-primary-container": "#0a0081",
+            "on-secondary-fixed": "#6b003e",
+            "secondary": "#ff67ad",
+            "inverse-primary": "#494bd7",
+            "surface-container-high": "#141f38",
+            "surface-container-low": "#091328",
+            "secondary-fixed-dim": "#ffaccb",
+            "outline-variant": "#40485d",
+            "on-error-container": "#ffb2b9",
+            "on-primary": "#0f00a4",
+            "on-primary-fixed": "#000000",
+            "surface-dim": "#060e20",
+            "inverse-on-surface": "#4d556b",
+            "on-tertiary": "#005464",
+            "primary-dim": "#6063ee",
+            "surface-tint": "#a3a6ff",
+            "tertiary-fixed": "#53ddfc",
+            "tertiary-container": "#53ddfc",
+            "on-surface": "#dee5ff",
+            "on-secondary-container": "#ffe5ec"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif"],
+            "body": ["Inter"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .glow-overlay {
+      background: radial-gradient(circle at 50% 0%, rgba(163, 166, 255, 0.1) 0%, transparent 70%);
+    }
+    .scroll-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scroll-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .text-glow {
+      text-shadow: 0 0 20px rgba(163, 166, 255, 0.4);
+    }
+    .dot-grid {
+      background-image: radial-gradient(rgba(163, 166, 255, 0.1) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+<meta property="og:title" content="Certifications | Neha Ghosh"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://i.ibb.co/DHQyFfZb/photo.jpg"/>
+<meta property="og:url" content="https://nehaghosh.dev/certifications.html"/>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 selection:text-primary min-h-screen dot-grid">
+<!-- Top Navigation Shell -->
+<nav id="main-nav" class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-2xl border border-slate-800/50 bg-surface/60 backdrop-blur-xl shadow-[0_20px_40px_rgba(163,166,255,0.06)] flex justify-between items-center px-8 py-4 z-50">
+  <div class="text-2xl font-bold tracking-tighter text-slate-100 font-headline"><a href="index.html" style="text-decoration:none;color:inherit">Neha Ghosh</a></div>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="about.html">About</a>
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="projects.html">Projects</a>
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="achievements.html">Achievements</a>
+    <a class="text-indigo-400 border-b-2 border-indigo-500/50 pb-1 font-medium transition-colors duration-300" href="certifications.html">Certifications</a>
+    <a class="text-slate-400 hover:text-indigo-300 transition-colors duration-300 font-medium" href="contact.html">Contact</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <button onclick="location.href='contact.html'" class="hidden md:inline-flex bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-6 py-2.5 rounded-xl font-label text-xs uppercase tracking-widest scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/10">Let's Talk</button>
+    <!-- Hamburger (mobile only) -->
+    <button id="nav-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-xl bg-surface-container-highest border border-outline-variant/20 gap-1.5 hover:border-primary/30 transition-colors" aria-label="Toggle menu" onclick="toggleMobileNav()">
+      <span class="nav-bar w-5 h-0.5 bg-on-surface-variant rounded-full transition-all duration-300"></span>
+      <span class="nav-bar w-5 h-0.5 bg-on-surface-variant rounded-full transition-all duration-300"></span>
+      <span class="nav-bar w-5 h-0.5 bg-on-surface-variant rounded-full transition-all duration-300"></span>
+    </button>
+  </div>
+</nav>
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed top-0 left-0 w-full h-full z-40 pointer-events-none">
+  <div id="mobile-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 transition-opacity duration-300" onclick="toggleMobileNav()"></div>
+  <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface-container-low border-l border-outline-variant/20 shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col">
+    <div class="flex items-center justify-between px-6 py-6 border-b border-outline-variant/10">
+      <span class="font-headline text-lg italic text-on-surface">Neha Ghosh</span>
+      <button onclick="toggleMobileNav()" class="w-9 h-9 flex items-center justify-center rounded-xl bg-surface-container-highest border border-outline-variant/20 hover:border-primary/30 transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant text-xl">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1 px-4 py-6 flex-grow">
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="about.html">About</a>
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="projects.html">Projects</a>
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="achievements.html">Achievements</a>
+        <a class="block px-4 py-3 rounded-xl text-indigo-400 bg-primary/10 font-medium font-label text-sm tracking-wide" href="certifications.html">Certifications</a>
+        <a class="block px-4 py-3 rounded-xl text-slate-400 hover:text-indigo-300 hover:bg-primary/5 transition-all font-medium font-label text-sm tracking-wide" href="contact.html">Contact</a>
+    </nav>
+    <div class="px-4 pb-8 border-t border-outline-variant/10 pt-6">
+      <a href="contact.html" class="block w-full text-center bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-6 py-3 rounded-xl font-label text-xs uppercase tracking-widest shadow-lg shadow-primary/10 hover:shadow-[0_0_24px_rgba(163,166,255,0.4)] transition-all">Let's Talk</a>
+      <div class="mt-5 flex flex-col gap-2">
+        <a href="tel:+916286710980" class="flex items-center gap-2 text-on-surface-variant text-xs font-body"><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1;">phone</span>+91 6286710980</a>
+        <a href="mailto:nehaghoshemail@gmail.com" class="flex items-center gap-2 text-on-surface-variant text-xs font-body"><span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings:'FILL' 1;">mail</span>nehaghoshemail@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function toggleMobileNav(){
+  var menu  = document.getElementById('mobile-menu');
+  var drawer= document.getElementById('mobile-drawer');
+  var overlay=document.getElementById('mobile-overlay');
+  var bars  = document.querySelectorAll('.nav-bar');
+  var open  = drawer.classList.contains('translate-x-0');
+  if(open){
+    drawer.classList.replace('translate-x-0','translate-x-full');
+    overlay.classList.replace('opacity-100','opacity-0');
+    menu.classList.add('pointer-events-none');
+    bars[0].style.transform=''; bars[2].style.transform=''; bars[1].style.opacity='1';
+    document.body.style.overflow='';
+  } else {
+    drawer.classList.replace('translate-x-full','translate-x-0');
+    overlay.classList.replace('opacity-0','opacity-100');
+    menu.classList.remove('pointer-events-none');
+    bars[0].style.transform='translateY(8px) rotate(45deg)';
+    bars[2].style.transform='translateY(-8px) rotate(-45deg)';
+    bars[1].style.opacity='0';
+    document.body.style.overflow='hidden';
+  }
+}
+</script>
+<main class="relative">
+<!-- Hero Section -->
+<section class="pt-48 pb-32 max-w-7xl mx-auto px-8 text-center relative">
+<div class="absolute inset-0 glow-overlay -z-10"></div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_#a3a6ff]"></span>
+
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-bold text-on-background mb-8 leading-[1.1] tracking-tight">
+        Courses &amp; certifications <span class="italic text-primary">I've done.</span>
+      </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light">
+        I spend a lot of time learning on the side. Here's what I've completed so far.
+      </p>
+</section>
+<!-- Certifications Carousel -->
+<section class="py-24 overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
+<div>
+<h2 class="font-headline text-4xl font-bold mb-2">My <span class="italic text-tertiary">Certifications</span></h2>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest">All verified with IDs</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-slate-400">west</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-slate-400">east</span>
+</button>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto px-8 md:px-[calc((100vw-80rem)/2)] scroll-hide snap-x">
+<!-- Card 1 -->
+<div class="flex-shrink-0 w-80 h-[420px] glass-card rounded-3xl p-8 flex flex-col justify-between group hover:border-primary/30 transition-all duration-700 snap-center">
+<div>
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+</div>
+<span class="text-[10px] font-label text-primary uppercase tracking-[0.3em] mb-2 block">Infosys Springboard · Aug 2025</span>
+<h3 class="font-headline text-2xl font-bold leading-tight mb-4">Generative AI Specialist</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed opacity-70">3 certifications: ChatGPT-4 Prompt Engineering, Build GenAI Apps with No-Code Tools, and Master Generative AI Tools.</p>
+</div>
+<div class="pt-6 border-t border-white/5 flex justify-between items-end">
+<div>
+<p class="text-[10px] text-slate-500 font-label uppercase">Issued by</p>
+<p class="text-xs font-bold text-slate-300">Infosys Springboard</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary text-[10px] font-bold">IA</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex-shrink-0 w-80 h-[420px] glass-card rounded-3xl p-8 flex flex-col justify-between group hover:border-tertiary/30 transition-all duration-700 snap-center">
+<div>
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl">hub</span>
+</div>
+<span class="text-[10px] font-label text-tertiary uppercase tracking-[0.3em] mb-2 block">Univ. of Colorado / Coursera · Nov 2024</span>
+<h3 class="font-headline text-2xl font-bold leading-tight mb-4">TCP/IP &amp; Advanced Topics</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed opacity-70">Advanced networking concepts via University of Colorado on Coursera.</p>
+</div>
+<div class="pt-6 border-t border-white/5 flex justify-between items-end">
+<div>
+<p class="text-[10px] text-slate-500 font-label uppercase">Credential ID</p>
+<p class="text-xs font-bold text-slate-300 font-mono">QJ6Y9E9PGWRE</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-tertiary/20 flex items-center justify-center text-tertiary text-[10px] font-bold">TC</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex-shrink-0 w-80 h-[420px] glass-card rounded-3xl p-8 flex flex-col justify-between group hover:border-secondary/30 transition-all duration-700 snap-center">
+<div>
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">code_blocks</span>
+</div>
+<span class="text-[10px] font-label text-secondary uppercase tracking-[0.3em] mb-2 block">CSE Pathshala · Aug 2025</span>
+<h3 class="font-headline text-2xl font-bold leading-tight mb-4">C++ OOPs &amp; DSA</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed opacity-70">OOP and DSA in C++ — sorting, trees, graphs, and problem-solving patterns.</p>
+</div>
+<div class="pt-6 border-t border-white/5 flex justify-between items-end">
+<div>
+<p class="text-[10px] text-slate-500 font-label uppercase">Credential ID</p>
+<p class="text-xs font-bold text-slate-300 font-mono">CP-20250607-2CPP-078</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-secondary text-[10px] font-bold">C++</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex-shrink-0 w-80 h-[420px] glass-card rounded-3xl p-8 flex flex-col justify-between group hover:border-primary/30 transition-all duration-700 snap-center">
+<div>
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">data_object</span>
+</div>
+<span class="text-[10px] font-label text-primary uppercase tracking-[0.3em] mb-2 block">freeCodeCamp · Dec 2023</span>
+<h3 class="font-headline text-2xl font-bold leading-tight mb-4">Responsive Web Design</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed opacity-70">Certified in HTML, CSS, flexbox, grid and responsive design principles.</p>
+</div>
+<div class="pt-6 border-t border-white/5 flex justify-between items-end">
+<div>
+<p class="text-[10px] text-slate-500 font-label uppercase">Issued by</p>
+<p class="text-xs font-bold text-slate-300">freeCodeCamp</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary text-[10px] font-bold">WD</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="flex-shrink-0 w-80 h-[420px] glass-card rounded-3xl p-8 flex flex-col justify-between group hover:border-tertiary/30 transition-all duration-700 snap-center">
+<div>
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl">computer</span>
+</div>
+<span class="text-[10px] font-label text-tertiary uppercase tracking-[0.3em] mb-2 block">IBM / Coursera · Sep 2024</span>
+<h3 class="font-headline text-2xl font-bold leading-tight mb-4">Hardware &amp; Operating Systems</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed opacity-70">Intro to Hardware and Operating Systems — IBM certified via Coursera.</p>
+</div>
+<div class="pt-6 border-t border-white/5 flex justify-between items-end">
+<div>
+<p class="text-[10px] text-slate-500 font-label uppercase">Credential ID</p>
+<p class="text-xs font-bold text-slate-300 font-mono">4LNNTWLW3V47</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-tertiary/20 flex items-center justify-center text-tertiary text-[10px] font-bold">IBM</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="flex-shrink-0 w-80 h-[420px] glass-card rounded-3xl p-8 flex flex-col justify-between group hover:border-secondary/30 transition-all duration-700 snap-center">
+<div>
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-secondary/10 transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">wifi</span>
+</div>
+<span class="text-[10px] font-label text-secondary uppercase tracking-[0.3em] mb-2 block">Google / Coursera · Sep 2024</span>
+<h3 class="font-headline text-2xl font-bold leading-tight mb-4">Bits &amp; Bytes of Networking</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed opacity-70">The Bits and Bytes of Computer Networking — certified by Google via Coursera.</p>
+</div>
+<div class="pt-6 border-t border-white/5 flex justify-between items-end">
+<div>
+<p class="text-[10px] text-slate-500 font-label uppercase">Issued by</p>
+<p class="text-xs font-bold text-slate-300">Google / Coursera</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-secondary text-[10px] font-bold">G</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="flex-shrink-0 w-80 h-[420px] glass-card rounded-3xl p-8 flex flex-col justify-between group hover:border-primary/30 transition-all duration-700 snap-center">
+<div>
+<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">campaign</span>
+</div>
+<span class="text-[10px] font-label text-primary uppercase tracking-[0.3em] mb-2 block">ULSA · Nov 2023</span>
+<h3 class="font-headline text-2xl font-bold leading-tight mb-4">Digital Marketing Fundamentals</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed opacity-70">SEO, Google Ads, Social Media Marketing, Email Marketing — United Latino Students Association.</p>
+</div>
+<div class="pt-6 border-t border-white/5 flex justify-between items-end">
+<div>
+<p class="text-[10px] text-slate-500 font-label uppercase">Issued by</p>
+<p class="text-xs font-bold text-slate-300">ULSA</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary text-[10px] font-bold">DM</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements Grid -->
+<section class="py-32 max-w-7xl mx-auto px-8 relative">
+<div class="grid lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4">
+<div class="sticky top-32">
+<span class="text-xs font-label text-primary tracking-[0.3em] uppercase mb-4 block">Achievements</span>
+<h2 class="font-headline text-5xl font-bold mb-8 leading-tight">A few things <span class="italic text-primary">I've won.</span></h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">Competitions and recognition I'm proud of.</p>
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+<p class="text-xs font-label uppercase tracking-widest text-slate-400">Total Milestones: 15+</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-6">
+<!-- Timeline Item 1 -->
+<div class="group relative pl-12 pb-12 border-l border-white/10">
+<div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-primary group-hover:scale-150 transition-transform duration-500 shadow-[0_0_15px_#a3a6ff]"></div>
+<div class="glass-card rounded-[2rem] p-8 hover:translate-x-2 transition-transform duration-500">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<h3 class="font-headline text-2xl font-bold">Google Big Code 2026</h3>
+<span class="text-[10px] font-label bg-primary/20 text-primary px-3 py-1 rounded-full uppercase tracking-widest self-start">Global Round 2 Qualifier</span>
+</div>
+<p class="text-on-surface-variant mb-6">Secured a position in Round 2, demonstrating algorithmic proficiency and architectural problem-solving on a global scale.</p>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-label uppercase text-slate-400">Algorithms</span>
+<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-label uppercase text-slate-400">Optimization</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="group relative pl-12 pb-12 border-l border-white/10">
+<div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-tertiary group-hover:scale-150 transition-transform duration-500"></div>
+<div class="glass-card rounded-[2rem] p-8 hover:translate-x-2 transition-transform duration-500">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<h3 class="font-headline text-2xl font-bold">Coding Blocks Hackathon</h3>
+<span class="text-[10px] font-label bg-tertiary/20 text-tertiary px-3 py-1 rounded-full uppercase tracking-widest self-start">Top 15 Finalist</span>
+</div>
+<p class="text-on-surface-variant mb-6">Built a working product in under 24 hours with our team. Made it to the top 15 nationwide.</p>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="group relative pl-12 pb-12 border-l border-white/10">
+<div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-secondary group-hover:scale-150 transition-transform duration-500"></div>
+<div class="glass-card rounded-[2rem] p-8 hover:translate-x-2 transition-transform duration-500">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<h3 class="font-headline text-2xl font-bold">13th All India KV Child Art</h3>
+<span class="text-[10px] font-label bg-secondary/20 text-secondary px-3 py-1 rounded-full uppercase tracking-widest self-start">Gold Medalist</span>
+</div>
+<p class="text-on-surface-variant mb-6">National recognition for artistic composition and visual narrative structure.</p>
+</div>
+</div>
+<!-- Timeline Item 4 -->
+<div class="group relative pl-12 pb-12 border-l border-white/10">
+<div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-slate-500 group-hover:scale-150 transition-transform duration-500"></div>
+<div class="glass-card rounded-[2rem] p-8 hover:translate-x-2 transition-transform duration-500">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<h3 class="font-headline text-2xl font-bold">Poem Recitation Excellence</h3>
+<span class="text-[10px] font-label bg-slate-500/20 text-slate-300 px-3 py-1 rounded-full uppercase tracking-widest self-start">Regional Champion</span>
+</div>
+<p class="text-on-surface-variant mb-6">1st place at W.B. Subhash Utsav 2019 and KVS Kolkata Region Cluster level. Also performed on Radio FM and released recitation albums.</p>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-label uppercase text-slate-400">Subhash Utsav 2019</span>
+<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-label uppercase text-slate-400">KVS Kolkata</span>
+<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-label uppercase text-slate-400">Radio FM</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 5 -->
+<div class="group relative pl-12 pb-12 border-l border-white/10">
+<div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-secondary group-hover:scale-150 transition-transform duration-500"></div>
+<div class="glass-card rounded-[2rem] p-8 hover:translate-x-2 transition-transform duration-500">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<h3 class="font-headline text-2xl font-bold">Hindi Elocution Competition</h3>
+<span class="text-[10px] font-label bg-secondary/20 text-secondary px-3 py-1 rounded-full uppercase tracking-widest self-start">1st Place</span>
+</div>
+<p class="text-on-surface-variant mb-6">1st place at KVS Kolkata Region Cluster Level Hindi Elocution Competition — recognised for communication and public speaking excellence.</p>
+</div>
+</div>
+<!-- Timeline Item 6 -->
+<div class="group relative pl-12 border-l border-white/10">
+<div class="absolute left-0 top-0 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-tertiary group-hover:scale-150 transition-transform duration-500"></div>
+<div class="glass-card rounded-[2rem] p-8 hover:translate-x-2 transition-transform duration-500">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<h3 class="font-headline text-2xl font-bold">One India 2024 — LPU</h3>
+<span class="text-[10px] font-label bg-tertiary/20 text-tertiary px-3 py-1 rounded-full uppercase tracking-widest self-start">1st Runner-Up Team</span>
+</div>
+<p class="text-on-surface-variant mb-6">1st Runner-Up at LPU's annual cultural festival One India 2024. Managed guest relations, welcomed and guided judges, and delivered a poem as the formal welcome.</p>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-label uppercase text-slate-400">Cultural Festival</span>
+<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-label uppercase text-slate-400">LPU 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+
+</main>
+<!-- Quote Strip -->
+<section class="w-full bg-surface-container-low border-t border-outline-variant/10 py-8 px-8 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+    <span class="material-symbols-outlined text-primary text-xl flex-shrink-0" style="font-variation-settings:'FILL' 1;">format_quote</span>
+    <div id="quote-display" class="transition-opacity duration-700 opacity-100">
+      <p class="font-headline italic text-base text-on-surface-variant leading-relaxed max-w-2xl" id="quote-text">
+        "The people who are crazy enough to think they can change the world are the ones who do."
+      </p>
+      <span class="font-label text-[10px] uppercase tracking-[0.25em] text-primary mt-2 block" id="quote-author">— Steve Jobs</span>
+    </div>
+    <span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 rotate-180 hidden sm:block" style="font-variation-settings:'FILL' 1;">format_quote</span>
+  </div>
+</section>
+<script>
+(function(){
+  var quotes=[
+    {text:"The people who are crazy enough to think they can change the world are the ones who do.",author:"Steve Jobs"},
+    {text:"Any sufficiently advanced technology is indistinguishable from magic.",author:"Arthur C. Clarke"},
+    {text:"The best way to predict the future is to invent it.",author:"Alan Kay"},
+    {text:"First, solve the problem. Then, write the code.",author:"John Johnson"},
+    {text:"Technology is best when it brings people together.",author:"Matt Mullenweg"},
+    {text:"Software is a great combination between artistry and engineering.",author:"Bill Gates"},
+    {text:"Code is like humor. When you have to explain it, it\'s bad.",author:"Cory House"},
+    {text:"The function of good software is to make the complex appear simple.",author:"Grady Booch"}
+  ];
+  var i=0;
+  function cycle(){
+    var d=document.getElementById('quote-display');
+    if(!d)return;
+    d.style.opacity='0';
+    setTimeout(function(){
+      i=(i+1)%quotes.length;
+      document.getElementById('quote-text').textContent='"'+quotes[i].text+'"';
+      document.getElementById('quote-author').textContent='— '+quotes[i].author;
+      d.style.opacity='1';
+    },700);
+  }
+  setInterval(cycle,5000);
+})();
+</script>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/10 bg-surface-container-low pt-14 pb-10 px-8">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Top: Identity + Nav links -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+
+      <!-- Column 1: Identity -->
+      <div class="space-y-3">
+        <p class="font-headline text-2xl italic text-on-surface">Neha Ghosh</p>
+        <p class="font-label text-xs uppercase tracking-[0.2em] text-primary">Full-Stack Web Developer | Freelancer</p>
+        <p class="font-body text-sm text-on-surface-variant leading-relaxed max-w-xs mt-4">
+          Undergraduate student in Computer Science &amp; Engineering. Building stuff, learning everything, one project at a time.
+        </p>
+      </div>
+
+      <!-- Column 2: Contact Info -->
+      <div class="space-y-4">
+        <p class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-5">Contact</p>
+        <a href="tel:+916286710980" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">phone</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-primary transition-colors">+91 6286710980</span>
+        </a>
+        <a href="mailto:nehaghoshemail@gmail.com" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">mail</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-secondary transition-colors">nehaghoshemail@gmail.com</span>
+        </a>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-tertiary text-base" style="font-variation-settings:'FILL' 1;">location_on</span>
+          <span class="font-body text-sm text-on-surface-variant">Kolkata, India</span>
+        </div>
+      </div>
+
+      <!-- Column 3: Links -->
+      <div class="space-y-4">
+        <p class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-5">Connect</p>
+        <a href="https://linkedin.com/in/nehaghosh00" target="_blank" rel="noopener" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings:'FILL' 1;">work</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-primary transition-colors">linkedin.com/in/nehaghosh00</span>
+        </a>
+        <a href="https://github.com/nehaghosh" target="_blank" rel="noopener" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings:'FILL' 1;">code</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-secondary transition-colors">github.com/nehaghosh</span>
+        </a>
+        <a href="about.html" class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-tertiary text-base" style="font-variation-settings:'FILL' 1;">person</span>
+          <span class="font-body text-sm text-on-surface-variant group-hover:text-tertiary transition-colors">View Full Profile</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-outline-variant/15 mb-8"></div>
+
+    <!-- Bottom: Nav + tagline -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex flex-wrap gap-6 justify-center md:justify-start">
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="projects.html">Projects</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="achievements.html">Achievements</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="certifications.html">Certifications</a>
+        <a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+      </div>
+      <p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant/50">Designed &amp; Built by Neha Ghosh</p>
+    </div>
+
+  </div>
+</footer>
+</body></html>
